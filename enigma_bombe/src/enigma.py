@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
 from collections import defaultdict
 
 ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -116,8 +117,8 @@ class EnigmaMachine:
 
 
     def load_data(self):
-
-        data_path = "../data/"
+        # print("Current working directory enigma:", os.getcwd())
+        data_path = f"{os.getcwd()}/enigma_bombe/enigma_bombe/data/"
         rotors_filename = "rotors.txt"
         reflectors_filename = "reflectors.txt"
 

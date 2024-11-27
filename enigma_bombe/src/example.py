@@ -1,10 +1,14 @@
-from enigma import EnigmaMachine
-from bombe import BombeMachine
+import os
+import sys
 
+from bombe import BombeMachine
+from enigma import EnigmaMachine
+
+print("Current working directory:", os.getcwd())
 # -----------
 # FILENAMES
 # -----------
-ex_path = "../data/"
+ex_path = f"{os.getcwd()}/enigma_bombe/enigma_bombe/data/"
 ex_config_enigma = "example_config_enigma.txt"
 ex_config_bombe = "example_config_bombe.txt"
 ex_text = "example_text.txt"
